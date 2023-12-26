@@ -8,4 +8,3 @@ function component() {
 
   return element;
 }
-console.log("Testing ");
