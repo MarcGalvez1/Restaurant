@@ -2,6 +2,9 @@
     font-family: 'one-piece';
     src: url("../fonts/one_piece_font.ttf");
 }
+:root {
+    --grey-bg: rgba(50, 50, 50, 50%);
+}
 body {
     background-image: url("../images/One-PieceBackground.gif");
     background-repeat: no-repeat;
@@ -12,7 +15,7 @@ body {
 }
 
 .custom-nav {
-    background-color: rgba(50, 50, 50, 50%);
+    background-color: var(--grey-bg);
 }
 
 
@@ -78,9 +81,6 @@ body {
         font-size: 9em;
     }
 
-    .custom-nav-item {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 2.5em;
-    }
+    
     
 }
