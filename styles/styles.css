@@ -17,7 +17,14 @@ body {
 .custom-nav {
     background-color: var(--grey-bg);
 }
-
+.custom-card {
+    background-color: var(--grey-bg) !important;
+}
+.custom-img {
+    width: 100%;
+    border-radius: 100%;
+    border-style: double;
+}
 
 @media only screen and (max-width: 576px) {
     /* Phone screen */
@@ -36,10 +43,8 @@ body {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 1em;
     }
-    .custom-card {
-        background-color: var(--grey-bg) !important;
-    }
 
+ 
 }
 
 @media only screen and (min-width:577px) and (max-width: 1080px) {
@@ -54,6 +59,10 @@ body {
     .custom-nav-item {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 1.5em;
+    }
+
+    .custom-card {
+        width: 100% !important;
     }
 }
 
@@ -71,6 +80,7 @@ body {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 2em;
     }
+    .custom-card {width: 30% !important;}
 }
 
 @media only screen and (min-width:1920px) {
