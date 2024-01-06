@@ -56,14 +56,43 @@ function nav() {
   navLogoContainer.appendChild(hamburgerBtn);
 
   // Create the nav list
+  // This contains the nav list
   const navListContainer = document.createElement("div");
   navListContainer.classList.add("collapse", "navbar-collapse", "me-2");
+  navListContainer.id = "navbarNav";
 
+  const navList = document.createElement("ul");
+  navList.classList.add("navbar-nav", "ms-auto", "custom-nav-list");
+  navList.appendChild(listItem("Home", true));
+  navList.appendChild(listItem("Menu", false));
+  navList.appendChild(listItem("Location", false));
+
+  navListContainer.appendChild(navList);
   // Attach all navContent child elements
   navContent.appendChild(navLogoContainer);
+  navContent.appendChild(navListContainer);
   navBar.append(navContent);
 
   return { navBar };
+}
+
+function listItem(title, isActive) {
+  // Create list item
+  const listItm = document.createElement("li");
+  listItm.classList.add("nav-item", "mx-2", "custom-nav-item");
+
+  // Create anchor tag
+  const navListAnchor = document.createElement("a");
+  navListAnchor.classList.add("nav-link");
+  if (isActive) {
+    navListAnchor.classList.add("active");
+    navListAnchor.setAttribute("aria-current", "page");
+  }
+  navListAnchor.textContent = title;
+
+  listItm.appendChild(navListAnchor);
+
+  return listItm;
 }
 
 export default nav;
