@@ -1,99 +1,99 @@
 @font-face {
-    font-family: 'one-piece';
-    src: url("../fonts/one_piece_font.ttf");
+  font-family: "one-piece";
+  src: url("../fonts/one_piece_font.ttf");
 }
 :root {
-    --grey-bg: rgba(50, 50, 50, 50%);
+  --grey-bg: rgba(50, 50, 50, 50%);
 }
 body {
-    background-image: url("../images/One-PieceBackground.gif");
-    background-repeat: no-repeat;
-    background-position: center ;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100%;
+  background-image: url("../images/One-PieceBackground.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
 }
 
 .custom-nav {
-    background-color: var(--grey-bg);
+  background-color: var(--grey-bg);
+}
+.custom-logo {
+  width: 100% !important;
 }
 .custom-card {
-    background-color: var(--grey-bg) !important;
+  background-color: var(--grey-bg) !important;
 }
 .custom-img {
-    width: 100%;
-    border-radius: 100%;
-    border-style: double;
+  width: 100%;
+  border-radius: 100%;
+  border-style: double;
 }
 
 @media only screen and (max-width: 576px) {
-    /* Phone screen */
-    .custom-brand {
-        width: 20%;
-    }
-    .custom-title {
-        font-family: one-piece, Arial, Helvetica, sans-serif;
-        color: white;
-        font-size: 2em;
-    }
-    .custom-nav-list {
-        margin-top: 5%;
-    }
-    .custom-nav-item {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1em;
-    }
-
- 
+  /* Phone screen */
+  .custom-brand {
+    width: 20%;
+  }
+  .custom-title {
+    font-family: one-piece, Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 2em;
+  }
+  .custom-nav-list {
+    margin-top: 5%;
+  }
+  .custom-nav-item {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+  }
 }
 
-@media only screen and (min-width:577px) and (max-width: 1080px) {
-    .custom-brand {
-        width: 15%;
-    }
-    .custom-title {
-        font-family: one-piece, Arial, Helvetica, sans-serif;
-        color: white;
-        font-size: 4.5em;
-    }
-    .custom-nav-item {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1.5em;
-    }
+@media only screen and (min-width: 577px) and (max-width: 1080px) {
+  .custom-brand {
+    width: 15%;
+  }
+  .custom-title {
+    font-family: one-piece, Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 4.5em;
+  }
+  .custom-nav-item {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+  }
 
-    .custom-card {
-        width: 100% !important;
-    }
+  .custom-card {
+    width: 100% !important;
+  }
 }
 
-@media only screen and (min-width:1081px) {
-    /* Small Desktop screen */
-    .custom-brand {
-        width: 15%;
-    }
-    .custom-title {
-        font-family: one-piece, Arial, Helvetica, sans-serif;
-        color: white;
-        font-size: 6em;
-    }
-    .custom-nav-item {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 2em;
-    }
-    .custom-card {width: 30% !important;}
+@media only screen and (min-width: 1081px) {
+  /* Small Desktop screen */
+  .custom-brand {
+    width: 15%;
+  }
+  .custom-title {
+    font-family: one-piece, Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 6em;
+  }
+  .custom-nav-item {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+  }
+  .custom-card {
+    width: 30% !important;
+  }
 }
 
-@media only screen and (min-width:1920px) {
-    /* Big Desktop screen */
-    .custom-brand {
-        width: 10%;
-    }
-    .custom-title {
-        font-family: one-piece, Arial, Helvetica, sans-serif;
-        color: white;
-        font-size: 9em;
-    }
-
-    
-    
+@media only screen and (min-width: 1920px) {
+  /* Big Desktop screen */
+  .custom-brand {
+    width: 10%;
+  }
+  .custom-title {
+    font-family: one-piece, Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 9em;
+  }
 }
