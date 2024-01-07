@@ -19,6 +19,17 @@ eval("/* module decorator */ module = __webpack_require__.nmd(module);\nvar __WE
 
 /***/ }),
 
+/***/ "./src/home.js":
+/*!*********************!*\
+  !*** ./src/home.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction homeContent() {\r\n  //Create main content container\r\n  const contentContainer = document.createElement(\"div\");\r\n  contentContainer.classList.add(\r\n    \"card\",\r\n    \"custom-card\",\r\n    \"mx-auto\",\r\n    \"mt-5\",\r\n    \"px-4\"\r\n  );\r\n  //Create title\r\n  const titleContainer = document.createElement(\"h1\");\r\n  titleContainer.classList.add(\"card-header\", \"text-light\", \"mx-auto\", \"h1\");\r\n  titleContainer.innerText = \"Taste the meals the Pirate King journeyed with\";\r\n\r\n  //Create image\r\n  const homeImg = document.createElement(\"img\");\r\n  homeImg.classList.add(\"custom-img\", \"mx-auto\", \"my-3\");\r\n  homeImg.src = \"./images/sanji-cooking.png\";\r\n\r\n  // attach all child element of homeContent\r\n  contentContainer.appendChild(titleContainer);\r\n  contentContainer.appendChild(homeImg);\r\n  return { contentContainer };\r\n}\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (homeContent);\r\n\n\n//# sourceURL=webpack://restaurantpage/./src/home.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -26,7 +37,7 @@ eval("/* module decorator */ module = __webpack_require__.nmd(module);\nvar __WE
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./nav */ \"./src/nav.js\");\n\r\n\r\nconst content = document.getElementById(\"content\");\r\ncontent.appendChild((0,_nav__WEBPACK_IMPORTED_MODULE_1__[\"default\"])().navBar);\r\n\n\n//# sourceURL=webpack://restaurantpage/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./nav */ \"./src/nav.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n\r\n\r\n\r\nconst content = document.getElementById(\"content\");\r\ncontent.appendChild((0,_nav__WEBPACK_IMPORTED_MODULE_1__[\"default\"])().navBar);\r\ncontent.appendChild((0,_home__WEBPACK_IMPORTED_MODULE_2__[\"default\"])().contentContainer);\r\n\n\n//# sourceURL=webpack://restaurantpage/./src/index.js?");
 
 /***/ }),
 
