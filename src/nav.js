@@ -1,3 +1,6 @@
+import homeContent from "./home";
+import menuContent from "./menu";
+const mainContent = document.getElementById("content");
 function nav() {
   // Initialize the nav container
   const navBar = document.createElement("nav");
@@ -58,14 +61,19 @@ function nav() {
   // Create the nav list
   // This contains the nav list
   const navListContainer = document.createElement("div");
-  navListContainer.classList.add("collapse", "navbar-collapse", "me-2");
+  navListContainer.classList.add(
+    "collapse",
+    "navbar-collapse",
+    "nav-tabs",
+    "me-2"
+  );
   navListContainer.id = "navbarNav";
 
   const navList = document.createElement("ul");
   navList.classList.add("navbar-nav", "ms-auto", "custom-nav-list");
   navList.appendChild(listItem("Home", true));
   navList.appendChild(listItem("Menu", false));
-  navList.appendChild(listItem("Location", false));
+  navList.appendChild(listItem("Contact", false));
 
   navListContainer.appendChild(navList);
   // Attach all navContent child elements
@@ -92,6 +100,36 @@ function listItem(title, isActive) {
 
   listItm.appendChild(navListAnchor);
 
+  listItm.addEventListener("click", () => {
+    const pageToVisit = title.toLowerCase();
+    // Remove "active" class from all list items
+
+    const allListItems = document.querySelectorAll(".custom-nav-item");
+    allListItems.forEach((item) => {
+      item.querySelector(".nav-link").classList.remove("active");
+    });
+
+    // Add "active" class to the clicked list item
+    navListAnchor.classList.add("active");
+
+    // Remove "active" page
+    const currPage = document.querySelector("div#content > div");
+    mainContent.removeChild(currPage);
+
+    // Add page to visit
+    switch (pageToVisit) {
+      case "home":
+        mainContent.appendChild(homeContent().contentContainer);
+        break;
+      case "menu":
+        mainContent.appendChild(menuContent().contentContainer);
+        break;
+      case "contact":
+        break;
+      default:
+        console.log("Page is broken");
+    }
+  });
   return listItm;
 }
 

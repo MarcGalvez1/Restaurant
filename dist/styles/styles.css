@@ -17,6 +17,9 @@ body {
 .custom-nav {
   background-color: var(--grey-bg);
 }
+.active {
+  background-color: var(--grey-bg) !important;
+}
 .custom-logo {
   width: 100% !important;
 }

@@ -1,4 +1,4 @@
-function homeContent() {
+function menuContent() {
   //Create main content container
   const contentContainer = document.createElement("div");
   contentContainer.classList.add(
@@ -12,7 +12,7 @@ function homeContent() {
   //Create title
   const titleContainer = document.createElement("h1");
   titleContainer.classList.add("card-header", "text-light", "mx-auto", "h1");
-  titleContainer.innerText = "Taste the meals the Pirate King journeyed with";
+  titleContainer.innerText = "Menu";
 
   //Create image
   const homeImg = document.createElement("img");
@@ -40,4 +40,4 @@ function homeContent() {
   contentContainer.appendChild(bodyContainer);
   return { contentContainer };
 }
-export default homeContent;
+export default menuContent;
