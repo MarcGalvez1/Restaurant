@@ -32,6 +32,10 @@ body {
   border-style: double;
 }
 
+.custom-hr {
+  border-bottom: 5px solid white;
+}
+
 @media only screen and (max-width: 576px) {
   /* Phone screen */
   .custom-brand {
