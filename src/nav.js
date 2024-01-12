@@ -1,5 +1,6 @@
 import homeContent from "./home";
 import menuContent from "./menu";
+import contactContent from "./contact";
 const mainContent = document.getElementById("content");
 function nav() {
   // Initialize the nav container
@@ -125,6 +126,7 @@ function listItem(title, isActive) {
         mainContent.appendChild(menuContent().contentContainer);
         break;
       case "contact":
+        mainContent.appendChild(contactContent().contentContainer);
         break;
       default:
         console.log("Page is broken");
